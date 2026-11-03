@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/OpeningCutscene.unity
+    guid: fd29164117672ca4a981f185e3442988
+  - enabled: 1
+    path: Assets/Scenes/SmashingTablet.unity
+    guid: 04c198593b7b8364b886fc6be0fcf4d2
+  - enabled: 1
+    path: Assets/Scenes/KeepTablet.unity
+    guid: e7904468aae8eec4c9ccb98b2bf2392b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
