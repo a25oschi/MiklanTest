@@ -290,6 +290,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &749568764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749568765}
+  - component: {fileID: 749568766}
+  m_Layer: 0
+  m_Name: ApplicationHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &749568765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749568764}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1117.1613, y: 526.1155, z: 1.298946}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &749568766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749568764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c8ee2cb5cb73d4ebc470f747b86658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneID: 2
 --- !u!1 &948490485
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,8 +394,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\"Miklan... I'm sorry, but I don't think I can do this anymore...\"\nLanber
     looked at Miklan with sadness in his eyes, the starry night reflected in his
-    eyes. \nMiklan looked away, his heart pounding. Panic approached but he tried
-    to keep cool.\n\"This isn't going to work. We're too different.\"\nLanber's words
+    gaze. \nMiklan turned away, his heart pounding. Panic approached but he tried
+    to keep calm.\n\"This isn't going to work. We're too different.\"\nLanber's words
     stung like a knife. The young man stood up and looked up at the sky for a minute,
     then closed his eyes.\n\"Goodbye, Miklan\"\nThen he walked away."
   m_isRightToLeft: 0
@@ -488,7 +533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E or Esc to continue.
+  m_text: Click anywhere to continue.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -682,6 +727,7 @@ GameObject:
   - component: {fileID: 2038594739}
   - component: {fileID: 2038594741}
   - component: {fileID: 2038594740}
+  - component: {fileID: 2038594742}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -743,6 +789,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038594738}
   m_CullTransparentMesh: 1
+--- !u!114 &2038594742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038594738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 749568766}
+          m_TargetAssemblyTypeName: SceneChangeHandler, Assembly-CSharp
+          m_MethodName: ChangeScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -750,3 +825,4 @@ SceneRoots:
   - {fileID: 447713141}
   - {fileID: 1026867312}
   - {fileID: 740197719}
+  - {fileID: 749568765}
