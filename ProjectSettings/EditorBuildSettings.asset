@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/OpeningCutscene.unity
     guid: fd29164117672ca4a981f185e3442988
   - enabled: 1
+    path: Assets/Scenes/Scene1.unity
+    guid: 032a5515a44a80641ac218d400debec6
+  - enabled: 1
     path: Assets/Scenes/SmashingTablet.unity
     guid: 04c198593b7b8364b886fc6be0fcf4d2
   - enabled: 1
